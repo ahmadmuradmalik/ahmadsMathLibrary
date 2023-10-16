@@ -21,12 +21,15 @@ Optimized Performance: Engineered for speed and precision, ensuring rapid comput
 
 To install ahmadsMathLibrary, use pip:
 
+```
 pip install ahmadsMathLibrary
+```
+
 
 ## Usage
 
 Here's a simple example of using the library:
-
+```python
 from ahmadsMathLibrary.IterSolver import IterativeSolver
 
 A, b = [[1, 2], [3, 4]], [5, 6]
@@ -36,16 +39,17 @@ x0, tol, maxiter = [0, 0], 1**-10, 25
 mySolver = IterativeSolver(A,b,x0,tol,maxiter)
 
 mySolver.conjugategradient()
-
+```
 ### or 
 
+```python 
 from ahmadsMathLibrary import eigenthings
 
 A = [[1,0],
      [0,1]]
 
 largest_eigenvalue = eigenthings.spectral_radius(A)
-
+```
 ## Documentation
 Detailed documentation can be found in my head
 

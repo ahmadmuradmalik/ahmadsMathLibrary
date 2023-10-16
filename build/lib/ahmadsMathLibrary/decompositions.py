@@ -1,3 +1,4 @@
+import numpy as np
 
 def fft(y):
     N = len(y)

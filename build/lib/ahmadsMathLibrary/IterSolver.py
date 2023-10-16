@@ -1,3 +1,5 @@
+import numpy as np
+
 class IterativeSolver:
   def __init__(self, A, b, x0, tol, maxiter):
     self.A = A.astype(float)
@@ -62,8 +64,6 @@ class IterativeSolver:
         norman = np.linalg.norm(np.subtract(x ,x0), np.inf)
 
         if norman < tol or itr>=maxiter:
-          if norman<tol:
-            print("Solution converged")
           if itr>=maxiter:
             print("Maximum iterations reached")
 

@@ -6,9 +6,11 @@ ahmadsMathLibrary is a Python-based numerical methods library designed to offer 
 
 Iterative Solvers: Advanced algorithms that enable precise solutions for linear systems. Currently supports jacobi, Gauss-siedel and Conjugate gradient solver.
 
-Eigen Methods: Methods for getting eigenvalues and eigenvectors of matrices. Currently uses the power method for the dominant eigen-pair and then obtaining subsequent pairs using matrix deflation
+Eigen Things: Methods for getting eigenvalues and eigenvectors of matrices. Currently uses the power method for the dominant eigen-pair and then obtaining subsequent pairs using matrix deflation
 
-Linear Algebra: Provdies basic functionality for computing common linear algebra like Matrix Vector Multiplication, dot products, vector norms. 
+Linear Algebra: Provides basic functionality for computing common linear algebra like Matrix Vector Multiplication, dot products, vector norms. 
+
+Decompositions: Efficient implementation of the Fast Fourier Transform. Can be used to decompose any input signals into corresponding frequencies.
 
 Compatibility: Designed to work seamlessly with established Python packages, such as NumPy.
 
@@ -48,11 +50,11 @@ largest_eigenvalue = eigenthings.spectral_radius(A)
 Detailed documentation can be found in my head
 
 ## Contribution
-Contributions are always welcome! Please read the contribution guidelines first if you can find them.
+Contributions are always welcome! Please read the contribution guidelines if you can find them.
 
 ## License
 
-MIT, see license.txt for more
+MIT License, see license.txt for more
 
 
 

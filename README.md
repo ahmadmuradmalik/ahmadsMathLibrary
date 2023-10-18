@@ -8,7 +8,7 @@ Iterative Solvers: Advanced algorithms that enable precise solutions for linear 
 
 Eigen Things: Methods for getting eigenvalues and eigenvectors of matrices. Currently uses the power method for the dominant eigen-pair and then obtaining subsequent pairs using matrix deflation
 
-Linear Algebra: Provides basic functionality for computing common linear algebra like Matrix Vector Multiplication, dot products, vector norms. 
+Linear Algebra: Provides basic functionality for computing common linear algebra operations like Matrix Vector Multiplication, dot products, vector norms. 
 
 Decompositions: Efficient implementation of the Fast Fourier Transform. Can be used to decompose any input signals into corresponding frequencies.
 

@@ -1,9 +1,15 @@
 setup.py
 ahmadsMathLibrary/IterSolver.py
+ahmadsMathLibrary/Matrix.py
+ahmadsMathLibrary/Tensor.py
+ahmadsMathLibrary/Vector.py
 ahmadsMathLibrary/__init__.py
 ahmadsMathLibrary/decompositions.py
 ahmadsMathLibrary/eigenthings.py
 ahmadsMathLibrary/linear_algebra.py
+ahmadsMathLibrary/loss_functions.py
+ahmadsMathLibrary/polynomials.py
+ahmadsMathLibrary/test.py
 ahmadsMathLibrary.egg-info/PKG-INFO
 ahmadsMathLibrary.egg-info/SOURCES.txt
 ahmadsMathLibrary.egg-info/dependency_links.txt

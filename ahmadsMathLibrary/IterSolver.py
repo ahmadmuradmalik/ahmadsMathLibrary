@@ -1,4 +1,49 @@
 import numpy as np
+from ahmadsMathLibrary.Vector import Vector
+from ahmadsMathLibrary.linear_algebra import norm
+
+def copy(x):
+   return [xi for xi in x]
+
+class IterativeSolverPrivate:
+   def __init__(self, A, b, x0, tol, maxiter):
+      self.A = A
+      self.b = [float(bi) for bi in b]
+      self.x0 = x0
+      self.tol = tol
+      self.maxiter = maxiter
+      for i in range(len(self.A)):
+         for j in range(len(self.A[0])):
+            self.A[i][j] = float(self.A[i][j])
+      
+
+   def jacobi(self):
+      A, b , x0, tol, maxiter = self.A, self.b, self.x0, self.tol, self.maxiter
+      n = len(x0)
+      itr = 0
+      x = copy(x0)
+      while True:
+          x = copy(x0)
+          for i in range(n):
+              sigma = 0
+              for j in range(n):
+                  if i != j:
+                      sigma += A[i][j] * x0[j]
+              x[i] = (b[i]-sigma) / A[i][i]
+
+          itr += 1
+          temp = Vector(x)
+          temp.subtract(x0)
+          norman = norm(temp.subtract(x0), type='inf')
+
+          if norman < tol or itr>=maxiter:
+            if itr>=maxiter:
+              print("Maximum iterations reached")
+
+            break
+          x0=copy(x)
+      return x
+
 
 class IterativeSolver:
   def __init__(self, A, b, x0, tol, maxiter):
@@ -11,7 +56,11 @@ class IterativeSolver:
        return  ValueError("Dimension Mismatch")
        
 
-
+  def gradientDescent(self):
+    A , b, x0 = self.A, self.b, self.x0
+    tol, maxiter = self.tol, self.maxiter
+    x = np.copy(x0)
+    return x
 
   def conjugateGradient(self):
     A , b, x0 = self.A, self.b, self.x0
@@ -70,6 +119,8 @@ class IterativeSolver:
           break
         x0=np.copy(x)
     return x
+  
+
 
 
 

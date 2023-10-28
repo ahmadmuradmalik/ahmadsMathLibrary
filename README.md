@@ -12,10 +12,6 @@ Linear Algebra: Provides basic functionality for computing common linear algebra
 
 Decompositions: Efficient implementation of the Fast Fourier Transform. Can be used to decompose any input signals into corresponding frequencies.
 
-Compatibility: Designed to work seamlessly with established Python packages, such as NumPy.
-
-Optimized Performance: Engineered for speed and precision, ensuring rapid computations for demanding tasks. Mainly utilizes algorithms that minimize FLOPS and MatVecs (Matrix Vector products)
-
 
 ## Installation
 
